@@ -4,359 +4,235 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUT MMI — Métiers du Multimédia et de l'Internet</title>
-  <meta name="description" content="Présentation de la formation BUT MMI : parcours, programme, débouchés et compétences du numérique.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Présentation de la formation BUT MMI : organisation des études, parcours, débouchés et programme.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation principale sticky -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="logo">
-        <span class="logo-badge">MMI</span>
-        <span>BUT MMI</span>
-      </a>
+      <a href="#top" class="site-title">BUT MMI</a>
 
       <nav aria-label="Navigation principale">
         <ul class="nav-list">
-          <li><a href="#formation" class="nav-link">La formation</a></li>
-          <li><a href="#parcours" class="nav-link">Les parcours</a></li>
-          <li><a href="#debouches" class="nav-link">Débouchés</a></li>
-          <li><a href="#programme" class="nav-link">Programme</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#debouches">Débouchés</a></li>
+          <li><a href="#programme">Programme</a></li>
+          <li><a href="wireframe.html" class="nav-wf">Wireframe</a></li>
         </ul>
       </nav>
-
-      <a href="wireframe.html" class="nav-wireframe">Voir le wireframe</a>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- Section Hero -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="anim-fade">
-          <span class="eyebrow">Bac +3 · Diplôme universitaire</span>
-          <h1>Métiers du Multimédia et de l'Internet</h1>
-          <p class="hero-lead">
-            Le BUT MMI forme en trois ans des profils polyvalents capables de concevoir,
-            développer et piloter des projets numériques : sites web, interfaces,
-            contenus audiovisuels et stratégies de communication.
-          </p>
-          <div class="hero-actions">
-            <a href="#parcours" class="btn btn-primary">Découvrir les parcours</a>
-            <a href="wireframe.html" class="btn btn-secondary">Consulter le wireframe</a>
-          </div>
+      <div class="container fade-in">
+        <p class="hero-kicker">Bachelor Universitaire de Technologie · Bac +3</p>
+        <h1>Métiers du Multimédia et de l'Internet</h1>
+        <p class="hero-desc">
+          Le BUT MMI forme en trois ans des professionnels polyvalents du numérique,
+          à la croisée du développement web, de la création graphique et audiovisuelle,
+          et de la stratégie de communication.
+        </p>
+        <div class="hero-links">
+          <a href="#parcours" class="btn-link">Découvrir les parcours</a>
+          <a href="wireframe.html" class="text-link">Consulter le wireframe</a>
         </div>
-
-        <aside class="hero-visual anim-fade anim-delay-2" aria-label="Les 3 piliers du BUT MMI">
-          <div class="pillar-box">
-            <span class="pillar-title">Développement Web</span>
-            <span class="pillar-tag">HTML · CSS · JS · PHP</span>
-          </div>
-          <div class="pillar-box">
-            <span class="pillar-title">Création Numérique</span>
-            <span class="pillar-tag">UI/UX · Graphisme · Vidéo</span>
-          </div>
-          <div class="pillar-box">
-            <span class="pillar-title">Communication &amp; Stratégie</span>
-            <span class="pillar-tag">SEO · Gestion de projet</span>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <!-- Bandeau défilant horizontal (CSS pur) -->
-    <div class="marquee" aria-label="Compétences enseignées en MMI">
-      <div class="marquee-track">
-        <div class="marquee-group">
-          <span class="marquee-item">Intégration HTML &amp; CSS</span>
-          <span class="marquee-dot" aria-hidden="true"></span>
-          <span class="marquee-item">JavaScript &amp; Frameworks</span>
-          <span class="marquee-dot" aria-hidden="true"></span>
-          <span class="marquee-item">Design d'interface (UI/UX)</span>
-          <span class="marquee-dot" aria-hidden="true"></span>
-          <span class="marquee-item">Production audiovisuelle</span>
-          <span class="marquee-dot" aria-hidden="true"></span>
-          <span class="marquee-item">Motion Design</span>
-          <span class="marquee-dot" aria-hidden="true"></span>
-          <span class="marquee-item">Stratégie digitale &amp; SEO</span>
-          <span class="marquee-dot" aria-hidden="true"></span>
-          <span class="marquee-item">Gestion de projet agile</span>
-          <span class="marquee-dot" aria-hidden="true"></span>
-        </div>
-        <!-- Duplication pour boucle continue sans coupure -->
-        <div class="marquee-group" aria-hidden="true">
-          <span class="marquee-item">Intégration HTML &amp; CSS</span>
-          <span class="marquee-dot"></span>
-          <span class="marquee-item">JavaScript &amp; Frameworks</span>
-          <span class="marquee-dot"></span>
-          <span class="marquee-item">Design d'interface (UI/UX)</span>
-          <span class="marquee-dot"></span>
-          <span class="marquee-item">Production audiovisuelle</span>
-          <span class="marquee-dot"></span>
-          <span class="marquee-item">Motion Design</span>
-          <span class="marquee-dot"></span>
-          <span class="marquee-item">Stratégie digitale &amp; SEO</span>
-          <span class="marquee-dot"></span>
-          <span class="marquee-item">Gestion de projet agile</span>
-          <span class="marquee-dot"></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 1 : La formation en bref -->
     <section id="formation" class="section">
       <div class="container">
-        <header class="section-header">
-          <h2>Une formation concrète au cœur du numérique</h2>
-          <p>
-            Dispensé en IUT, le Bachelor Universitaire de Technologie (BUT) allie
-            enseignements théoriques, travaux pratiques et mises en situation professionnelle.
-          </p>
-        </header>
+        <h2 class="section-title">La formation en bref</h2>
+        <p class="section-intro">
+          Dispensé en IUT (Institut Universitaire de Technologie), le cursus associe
+          cours magistraux, travaux dirigés et projets concrets en équipe.
+        </p>
 
-        <div class="grid-3">
-          <article class="card">
-            <span class="card-num">01 — Durée</span>
-            <h3>3 ans &amp; 180 ECTS</h3>
+        <div class="split-layout">
+          <div class="split-text">
             <p>
-              Un cursus reconnu au grade de Licence, accessible après le baccalauréat
-              (général ou technologique) via Parcoursup.
+              La pédagogie du BUT repose sur l'approche par compétences et sur des
+              <strong>SAÉ</strong> (Situations d'Apprentissage et d'Évaluation) : les
+              étudiants répondent à des cahiers des charges complets, de la conception
+              d'une maquette jusqu'à la mise en ligne.
             </p>
-          </article>
+            <p>
+              Après une première année commune permettant d'acquérir les bases du web,
+              du design et de la communication, chaque étudiant choisit un parcours de
+              spécialisation dès la deuxième année.
+            </p>
+          </div>
 
-          <article class="card">
-            <span class="card-num">02 — Pédagogie</span>
-            <h3>Approche par projets (SAÉ)</h3>
-            <p>
-              Les Situations d'Apprentissage et d'Évaluation placent les étudiants en
-              conditions réelles : brief client, maquettage, intégration et soutenance.
-            </p>
-          </article>
-
-          <article class="card">
-            <span class="card-num">03 — Terrain</span>
-            <h3>Stages &amp; Alternance</h3>
-            <p>
-              Entre 22 et 26 semaines de stage sur les trois années, avec la possibilité
-              d'effectuer la 2e ou la 3e année en alternance.
-            </p>
-          </article>
+          <dl class="facts-list">
+            <div class="facts-row">
+              <dt>Durée du cursus</dt>
+              <dd>3 ans (6 semestres)</dd>
+            </div>
+            <div class="facts-row">
+              <dt>Grade obtenu</dt>
+              <dd>Licence (180 ECTS)</dd>
+            </div>
+            <div class="facts-row">
+              <dt>Stages en entreprise</dt>
+              <dd>22 à 26 semaines</dd>
+            </div>
+            <div class="facts-row">
+              <dt>Alternance</dt>
+              <dd>Possible en 2e et 3e année</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <!-- Section 2 : Les 3 parcours nationaux -->
     <section id="parcours" class="section section-alt">
       <div class="container">
-        <header class="section-header">
-          <h2>Les trois parcours de spécialisation</h2>
-          <p>
-            Après une première année de tronc commun, les étudiants s'orientent dès la
-            deuxième année vers l'un des trois parcours nationaux.
-          </p>
-        </header>
+        <h2 class="section-title">Les trois parcours nationaux</h2>
+        <p class="section-intro">
+          À partir du semestre 3, la formation s'articule autour de trois spécialités
+          complémentaires.
+        </p>
 
-        <div class="grid-3">
-          <article class="card">
-            <span class="card-num">Parcours 01</span>
+        <div class="tracks-grid">
+          <article class="track-item">
             <h3>Développement Web et Dispositifs Interactifs</h3>
             <p>
-              Conception d'applications et de sites web accessibles, performants et
-              sécurisés, du front-end au back-end.
+              Conception technique de sites et d'applications web, de l'intégration
+              front-end à la gestion des données côté serveur.
             </p>
-            <div class="card-tags">
-              <span class="tag">Front-end</span>
-              <span class="tag">Back-end</span>
-              <span class="tag">Base de données</span>
-            </div>
+            <ul class="track-list">
+              <li>Intégration HTML5 / CSS3</li>
+              <li>JavaScript et frameworks</li>
+              <li>Développement back-end &amp; API</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <span class="card-num">Parcours 02</span>
+          <article class="track-item">
             <h3>Création Numérique</h3>
             <p>
-              Expression visuelle, design graphique, conception d'interfaces,
-              photographie, montage vidéo et animation 2D/3D.
+              Conception visuelle et production de contenus graphiques, interactifs
+              ou audiovisuels adaptés aux supports numériques.
             </p>
-            <div class="card-tags">
-              <span class="tag">Design UI</span>
-              <span class="tag">Audiovisuel</span>
-              <span class="tag">Motion Design</span>
-            </div>
+            <ul class="track-list">
+              <li>Design graphique &amp; UI</li>
+              <li>Photographie et montage vidéo</li>
+              <li>Animation et motion design</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <span class="card-num">Parcours 03</span>
+          <article class="track-item">
             <h3>Stratégie de Communication et Design d'Expérience</h3>
             <p>
-              Élaboration de stratégies éditoriales, ergonomie UX, marketing digital,
-              référencement et coordination d'équipe.
+              Analyse des usages, ergonomie des interfaces, rédaction éditoriale et
+              pilotage de projets numériques.
             </p>
-            <div class="card-tags">
-              <span class="tag">UX Research</span>
-              <span class="tag">SEO / SEA</span>
-              <span class="tag">Éditorial</span>
-            </div>
+            <ul class="track-list">
+              <li>Ergonomie et recherche UX</li>
+              <li>Référencement naturel (SEO)</li>
+              <li>Gestion de projet agile</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Section 3 : Débouchés (défilement horizontal scroll-snap) -->
     <section id="debouches" class="section">
       <div class="container">
-        <header class="section-header">
-          <h2>Débouchés professionnels</h2>
-          <p>
-            Le diplôme ouvre la voie à une grande diversité de métiers en agence,
-            chez l'annonceur, en studio ou en freelance.
-          </p>
-        </header>
+        <h2 class="section-title">Débouchés professionnels</h2>
+        <p class="section-intro">
+          Le BUT MMI prépare aussi bien à l'insertion directe en agence, en entreprise
+          ou en indépendant qu'à la poursuite d'études en Master ou en école spécialisée.
+        </p>
 
-        <div class="jobs-track">
-          <article class="job-card">
-            <p class="job-sector">Web &amp; Code</p>
+        <div class="jobs-scroll">
+          <article class="job-box">
             <h3>Intégrateur / Développeur Front-End</h3>
-            <p>Traduit les maquettes graphiques en pages web sémantiques, responsives et animées.</p>
+            <p>Traduit les maquettes en interfaces web sémantiques, accessibles et responsives.</p>
           </article>
 
-          <article class="job-card">
-            <p class="job-sector">Design</p>
+          <article class="job-box">
             <h3>Designer UI / UX</h3>
-            <p>Conçoit les parcours utilisateurs, les wireframes et l'identité visuelle des interfaces.</p>
+            <p>Conçoit l'architecture de l'information, les wireframes et le design des écrans.</p>
           </article>
 
-          <article class="job-card">
-            <p class="job-sector">Image &amp; Son</p>
-            <h3>Motion Designer / Monteur</h3>
-            <p>Réalise des vidéos, habillages graphiques et animations pour le web et les réseaux.</p>
+          <article class="job-box">
+            <h3>Motion Designer</h3>
+            <p>Réalise des animations graphiques, génériques et vidéos pour le web.</p>
           </article>
 
-          <article class="job-card">
-            <p class="job-sector">Stratégie</p>
+          <article class="job-box">
             <h3>Chef de projet digital</h3>
-            <p>Coordonne les équipes techniques et créatives, du cahier des charges à la mise en ligne.</p>
+            <p>Coordonne les équipes créatives et techniques du brief jusqu'à la livraison.</p>
           </article>
 
-          <article class="job-card">
-            <p class="job-sector">Communication</p>
-            <h3>Chargé de communication numérique</h3>
-            <p>Pilote la présence en ligne, la création de contenus et l'animation des communautés.</p>
+          <article class="job-box">
+            <h3>Chargé de communication</h3>
+            <p>Élabore la stratégie éditoriale et anime la présence numérique d'une organisation.</p>
           </article>
         </div>
-        <p class="scroll-hint">Faites défiler horizontalement pour voir tous les métiers →</p>
+        <p class="scroll-note">Faire défiler horizontalement pour voir les autres métiers →</p>
       </div>
     </section>
 
-    <!-- Section 4 : Programme par année (accordéon HTML5) -->
     <section id="programme" class="section section-alt">
       <div class="container">
-        <header class="section-header">
-          <h2>Organisation du programme</h2>
-          <p>
-            Un apprentissage progressif structuré autour de cinq blocs de compétences :
-            Comprendre, Concevoir, Exprimer, Développer et Entreprendre.
-          </p>
-        </header>
+        <h2 class="section-title">Organisation du programme</h2>
+        <p class="section-intro">
+          Les enseignements progressent des fondamentaux techniques et créatifs jusqu'à
+          la professionnalisation en entreprise.
+        </p>
 
-        <div class="accordion">
-          <details class="accordion-item" open>
+        <div class="syllabus">
+          <details class="syllabus-item" open>
             <summary>
-              <span>1re année — Semestres 1 et 2 : Les fondamentaux</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
+              <span>1re année — Semestres 1 et 2 : Tronc commun</span>
+              <span class="syllabus-plus" aria-hidden="true">+</span>
             </summary>
-            <div class="accordion-content">
-              <p>Découverte des trois grands domaines de la formation via des projets transversaux :</p>
+            <div class="syllabus-body">
+              <p>Découverte des trois pôles de la formation :</p>
               <ul>
-                <li>Intégration web statique (HTML5, CSS3, responsive design)</li>
+                <li>Intégration web statique (HTML5, CSS3, mise en page responsive)</li>
                 <li>Bases de la programmation et algorithmique</li>
-                <li>Culture artistique, typographie et suite graphique</li>
-                <li>Théories de la communication et écriture web</li>
+                <li>Culture visuelle, typographie et outils graphiques</li>
+                <li>Expression écrite, orale et théories de la communication</li>
               </ul>
             </div>
           </details>
 
-          <details class="accordion-item">
+          <details class="syllabus-item">
             <summary>
-              <span>2e année — Semestres 3 et 4 : Approfondissement &amp; spécialisation</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
+              <span>2e année — Semestres 3 et 4 : Spécialisation</span>
+              <span class="syllabus-plus" aria-hidden="true">+</span>
             </summary>
-            <div class="accordion-content">
-              <p>Choix du parcours de spécialisation et premier stage long en entreprise :</p>
+            <div class="syllabus-body">
+              <p>Choix du parcours et premier stage long :</p>
               <ul>
-                <li>Développement dynamique, bases de données et CMS</li>
-                <li>Conception UX/UI avancée et prototypage interactif</li>
+                <li>Développement web dynamique et bases de données</li>
+                <li>Prototypage d'interfaces et tests utilisateurs</li>
                 <li>Production audiovisuelle en équipe</li>
                 <li>Stage obligatoire de 8 à 12 semaines</li>
               </ul>
             </div>
           </details>
 
-          <details class="accordion-item">
+          <details class="syllabus-item">
             <summary>
               <span>3e année — Semestres 5 et 6 : Professionnalisation</span>
-              <span class="accordion-icon" aria-hidden="true">+</span>
+              <span class="syllabus-plus" aria-hidden="true">+</span>
             </summary>
-            <div class="accordion-content">
-              <p>Consolidation de l'expertise métier, souvent réalisée en alternance :</p>
+            <div class="syllabus-body">
+              <p>Mise en pratique avancée, souvent en alternance :</p>
               <ul>
-                <li>Projets d'envergure en autonomie complète</li>
-                <li>Architecture web, accessibilité et éco-conception</li>
+                <li>Projets tutorés complets en autonomie</li>
+                <li>Accessibilité numérique et éco-conception web</li>
                 <li>Stage de fin d'études (14 à 16 semaines) ou contrat d'apprentissage</li>
-                <li>Préparation à l'insertion professionnelle ou à la poursuite en Master</li>
               </ul>
             </div>
           </details>
         </div>
-      </div>
-    </section>
-
-    <!-- Section 5 : Contact -->
-    <section id="contact" class="section">
-      <div class="container contact-grid">
-        <div>
-          <header class="section-header">
-            <h2>En savoir plus sur la formation</h2>
-            <p>
-              Vous préparez votre orientation ou souhaitez poser une question sur le
-              programme du BUT MMI ? Utilisez ce formulaire de démonstration.
-            </p>
-          </header>
-          <p style="color: var(--ink-muted); font-size: 0.95rem;">
-            Plus de 30 départements MMI existent partout en France au sein des IUT
-            (Instituts Universitaires de Technologie).
-          </p>
-        </div>
-
-        <form class="contact-form" action="#" method="get">
-          <div class="form-group">
-            <label for="nom">Nom et prénom</label>
-            <input type="text" id="nom" name="nom" placeholder="Camille Martin" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Adresse e-mail</label>
-            <input type="email" id="email" name="email" placeholder="camille.martin@exemple.fr" required>
-          </div>
-          <div class="form-group">
-            <label for="parcours-select">Parcours qui vous intéresse</label>
-            <select id="parcours-select" name="parcours">
-              <option value="dev">Développement Web</option>
-              <option value="crea">Création Numérique</option>
-              <option value="strat">Stratégie de Communication</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="3" placeholder="Votre question sur le BUT MMI..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer la demande</button>
-        </form>
       </div>
     </section>
 
@@ -367,7 +243,7 @@
       <p>Projet d'intégration HTML5 / CSS3 — Formation BUT MMI</p>
       <div class="footer-links">
         <a href="#top">Haut de page</a>
-        <a href="wireframe.html">Wireframe du site</a>
+        <a href="wireframe.html">Wireframe</a>
       </div>
     </div>
   </footer>

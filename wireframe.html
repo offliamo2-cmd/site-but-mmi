@@ -19,7 +19,7 @@
     }
 
     .wf-wrap {
-      max-width: 900px;
+      max-width: 880px;
       margin: 0 auto;
     }
 
@@ -27,16 +27,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .wf-top h1 {
       font-size: 1rem;
-      letter-spacing: 0.04em;
     }
 
     .wf-btn-back {
-      padding: 8px 14px;
+      padding: 7px 12px;
       border: 1.5px solid #18181b;
       background-color: #18181b;
       color: #ffffff;
@@ -44,18 +43,12 @@
       font-size: 0.8rem;
     }
 
-    .wf-btn-back:hover {
-      background-color: #ffffff;
-      color: #18181b;
-    }
-
-    /* Page wireframe */
     .wf-canvas {
       background-color: #ffffff;
       border: 2px solid #18181b;
-      padding: 20px;
+      padding: 18px;
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
 
     .wf-zone {
@@ -75,20 +68,19 @@
       margin-bottom: 12px;
     }
 
-    /* Barres de texte abstraites */
     .bar {
       height: 10px;
       background-color: #d4d4d8;
     }
 
     .bar-lg {
-      height: 22px;
+      height: 20px;
       background-color: #a1a1aa;
-      width: 75%;
+      width: 65%;
     }
 
     .bar-sm {
-      width: 55%;
+      width: 45%;
     }
 
     .stack {
@@ -96,36 +88,19 @@
       gap: 8px;
     }
 
-    /* Boîtes */
     .box {
       border: 1.5px solid #52525b;
       background-color: #f4f4f5;
-      padding: 8px 12px;
+      padding: 7px 12px;
       font-size: 0.75rem;
       text-align: center;
     }
 
-    .box-cross {
-      border: 1.5px solid #52525b;
-      min-height: 90px;
-      background:
-        linear-gradient(to top right, transparent calc(50% - 0.8px), #a1a1aa, transparent calc(50% + 0.8px)),
-        linear-gradient(to bottom right, transparent calc(50% - 0.8px), #a1a1aa, transparent calc(50% + 0.8px)),
-        #f4f4f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 700;
-    }
-
-    /* Zones spécifiques */
     .row-between {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 10px;
-      flex-wrap: wrap;
     }
 
     .nav-links {
@@ -134,7 +109,7 @@
     }
 
     .nav-links span {
-      width: 48px;
+      width: 44px;
       height: 10px;
       background-color: #d4d4d8;
       display: inline-block;
@@ -144,7 +119,6 @@
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       gap: 16px;
-      align-items: center;
     }
 
     .grid-3 {
@@ -167,10 +141,17 @@
       gap: 8px;
     }
 
-    .btns {
+    .dl-row {
+      border-bottom: 1px solid #a1a1aa;
+      padding: 6px 0;
       display: flex;
-      gap: 8px;
-      margin-top: 6px;
+      justify-content: space-between;
+    }
+
+    .dl-row span {
+      height: 8px;
+      width: 35%;
+      background-color: #d4d4d8;
     }
 
     .acc-row {
@@ -180,12 +161,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-
-    .input {
-      height: 26px;
-      border: 1.5px solid #a1a1aa;
-      background-color: #ffffff;
     }
 
     @media (max-width: 680px) {
@@ -205,99 +180,66 @@
     </div>
 
     <div class="wf-canvas">
-      <!-- 1. Header -->
       <div class="wf-zone">
         <span class="wf-tag">01. Header sticky</span>
         <div class="row-between">
-          <div class="box">LOGO</div>
-          <div class="nav-links" aria-label="Liens de navigation">
+          <div class="box">TITRE</div>
+          <div class="nav-links">
             <span></span><span></span><span></span><span></span><span></span>
           </div>
-          <div class="box">Wireframe</div>
         </div>
       </div>
 
-      <!-- 2. Hero -->
       <div class="wf-zone">
-        <span class="wf-tag">02. Hero (2 colonnes)</span>
+        <span class="wf-tag">02. Hero (1 colonne)</span>
+        <div class="stack">
+          <div class="bar bar-sm"></div>
+          <div class="bar-lg"></div>
+          <div class="bar"></div>
+          <div class="row-between" style="justify-content: flex-start; margin-top: 6px;">
+            <div class="box">Bouton</div>
+            <div class="box">Lien</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wf-zone">
+        <span class="wf-tag">03. Formation (2 colonnes : texte + chiffres)</span>
         <div class="grid-2">
           <div class="stack">
-            <div class="bar bar-sm"></div>
-            <div class="bar-lg"></div>
+            <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar bar-sm"></div>
-            <div class="btns">
-              <div class="box">CTA 1</div>
-              <div class="box">CTA 2</div>
-            </div>
           </div>
-          <div class="box-cross">3 Piliers MMI</div>
+          <div class="card">
+            <div class="dl-row"><span></span><span></span></div>
+            <div class="dl-row"><span></span><span></span></div>
+            <div class="dl-row"><span></span><span></span></div>
+          </div>
         </div>
       </div>
 
-      <!-- 3. Bandeau défilant -->
-      <div class="wf-zone" style="padding: 10px 14px;">
-        <span class="wf-tag" style="margin-bottom: 0;">03. Bandeau défilant CSS (← →)</span>
-      </div>
-
-      <!-- 4. Formation -->
       <div class="wf-zone">
-        <span class="wf-tag">04. La formation (3 colonnes)</span>
+        <span class="wf-tag">04. Parcours (3 colonnes)</span>
         <div class="grid-3">
-          <div class="card">
-            <div class="bar bar-sm"></div>
-            <div class="bar"></div>
-            <div class="bar bar-sm"></div>
-          </div>
-          <div class="card">
-            <div class="bar bar-sm"></div>
-            <div class="bar"></div>
-            <div class="bar bar-sm"></div>
-          </div>
-          <div class="card">
-            <div class="bar bar-sm"></div>
-            <div class="bar"></div>
-            <div class="bar bar-sm"></div>
-          </div>
+          <div class="card"><div class="bar bar-sm"></div><div class="bar"></div></div>
+          <div class="card"><div class="bar bar-sm"></div><div class="bar"></div></div>
+          <div class="card"><div class="bar bar-sm"></div><div class="bar"></div></div>
         </div>
       </div>
 
-      <!-- 5. Parcours -->
       <div class="wf-zone">
-        <span class="wf-tag">05. Les 3 parcours (3 colonnes)</span>
-        <div class="grid-3">
-          <div class="card">
-            <div class="bar bar-sm"></div>
-            <div class="bar"></div>
-            <div class="box">Tags</div>
-          </div>
-          <div class="card">
-            <div class="bar bar-sm"></div>
-            <div class="bar"></div>
-            <div class="box">Tags</div>
-          </div>
-          <div class="card">
-            <div class="bar bar-sm"></div>
-            <div class="bar"></div>
-            <div class="box">Tags</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6. Débouchés -->
-      <div class="wf-zone">
-        <span class="wf-tag">06. Débouchés (scroll-snap X)</span>
+        <span class="wf-tag">05. Débouchés (scroll horizontal)</span>
         <div class="grid-4">
-          <div class="box-cross" style="min-height: 60px;">Métier</div>
-          <div class="box-cross" style="min-height: 60px;">Métier</div>
-          <div class="box-cross" style="min-height: 60px;">Métier</div>
-          <div class="box-cross" style="min-height: 60px;">→</div>
+          <div class="card"><div class="bar"></div></div>
+          <div class="card"><div class="bar"></div></div>
+          <div class="card"><div class="bar"></div></div>
+          <div class="card"><div class="bar"></div></div>
         </div>
       </div>
 
-      <!-- 7. Programme -->
       <div class="wf-zone">
-        <span class="wf-tag">07. Programme (Accordéon &lt;details&gt;)</span>
+        <span class="wf-tag">06. Programme (accordéon)</span>
         <div class="stack">
           <div class="acc-row"><div class="bar bar-sm"></div><span>+</span></div>
           <div class="acc-row"><div class="bar bar-sm"></div><span>+</span></div>
@@ -305,30 +247,11 @@
         </div>
       </div>
 
-      <!-- 8. Contact -->
       <div class="wf-zone">
-        <span class="wf-tag">08. Contact (2 colonnes)</span>
-        <div class="grid-2">
-          <div class="stack">
-            <div class="bar-lg"></div>
-            <div class="bar"></div>
-            <div class="bar bar-sm"></div>
-          </div>
-          <div class="card">
-            <div class="input"></div>
-            <div class="input"></div>
-            <div class="input" style="height: 46px;"></div>
-            <div class="box">Envoyer</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 9. Footer -->
-      <div class="wf-zone">
-        <span class="wf-tag">09. Footer</span>
+        <span class="wf-tag">07. Footer</span>
         <div class="row-between">
-          <div class="bar" style="width: 180px;"></div>
-          <div class="bar" style="width: 120px;"></div>
+          <div class="bar" style="width: 160px;"></div>
+          <div class="bar" style="width: 100px;"></div>
         </div>
       </div>
     </div>
