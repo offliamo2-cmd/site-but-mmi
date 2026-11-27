@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe — Site BUT MMI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background-color: #f4f4f5;
+      color: #18181b;
+      padding: 28px 20px;
+    }
+
+    .wf-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .wf-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .wf-top h1 {
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    .wf-btn-back {
+      padding: 8px 14px;
+      border: 1.5px solid #18181b;
+      background-color: #18181b;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .wf-btn-back:hover {
+      background-color: #ffffff;
+      color: #18181b;
+    }
+
+    /* Page wireframe */
+    .wf-canvas {
+      background-color: #ffffff;
+      border: 2px solid #18181b;
+      padding: 20px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .wf-zone {
+      border: 1.5px dashed #71717a;
+      padding: 14px;
+      background-color: #fafafa;
+    }
+
+    .wf-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: #18181b;
+      color: #ffffff;
+      padding: 2px 7px;
+      margin-bottom: 12px;
+    }
+
+    /* Barres de texte abstraites */
+    .bar {
+      height: 10px;
+      background-color: #d4d4d8;
+    }
+
+    .bar-lg {
+      height: 22px;
+      background-color: #a1a1aa;
+      width: 75%;
+    }
+
+    .bar-sm {
+      width: 55%;
+    }
+
+    .stack {
+      display: grid;
+      gap: 8px;
+    }
+
+    /* Boîtes */
+    .box {
+      border: 1.5px solid #52525b;
+      background-color: #f4f4f5;
+      padding: 8px 12px;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .box-cross {
+      border: 1.5px solid #52525b;
+      min-height: 90px;
+      background:
+        linear-gradient(to top right, transparent calc(50% - 0.8px), #a1a1aa, transparent calc(50% + 0.8px)),
+        linear-gradient(to bottom right, transparent calc(50% - 0.8px), #a1a1aa, transparent calc(50% + 0.8px)),
+        #f4f4f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    /* Zones spécifiques */
+    .row-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 6px;
+    }
+
+    .nav-links span {
+      width: 48px;
+      height: 10px;
+      background-color: #d4d4d8;
+      display: inline-block;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .card {
+      border: 1.5px solid #71717a;
+      background-color: #ffffff;
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .acc-row {
+      border: 1.5px solid #71717a;
+      background-color: #ffffff;
+      padding: 9px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .input {
+      height: 26px;
+      border: 1.5px solid #a1a1aa;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 680px) {
+      .grid-2,
+      .grid-3,
+      .grid-4 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wf-wrap">
+    <div class="wf-top">
+      <h1>WIREFRAME — BUT MMI</h1>
+      <a href="index.html" class="wf-btn-back">← Retour au site</a>
+    </div>
+
+    <div class="wf-canvas">
+      <!-- 1. Header -->
+      <div class="wf-zone">
+        <span class="wf-tag">01. Header sticky</span>
+        <div class="row-between">
+          <div class="box">LOGO</div>
+          <div class="nav-links" aria-label="Liens de navigation">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="box">Wireframe</div>
+        </div>
+      </div>
+
+      <!-- 2. Hero -->
+      <div class="wf-zone">
+        <span class="wf-tag">02. Hero (2 colonnes)</span>
+        <div class="grid-2">
+          <div class="stack">
+            <div class="bar bar-sm"></div>
+            <div class="bar-lg"></div>
+            <div class="bar"></div>
+            <div class="bar bar-sm"></div>
+            <div class="btns">
+              <div class="box">CTA 1</div>
+              <div class="box">CTA 2</div>
+            </div>
+          </div>
+          <div class="box-cross">3 Piliers MMI</div>
+        </div>
+      </div>
+
+      <!-- 3. Bandeau défilant -->
+      <div class="wf-zone" style="padding: 10px 14px;">
+        <span class="wf-tag" style="margin-bottom: 0;">03. Bandeau défilant CSS (← →)</span>
+      </div>
+
+      <!-- 4. Formation -->
+      <div class="wf-zone">
+        <span class="wf-tag">04. La formation (3 colonnes)</span>
+        <div class="grid-3">
+          <div class="card">
+            <div class="bar bar-sm"></div>
+            <div class="bar"></div>
+            <div class="bar bar-sm"></div>
+          </div>
+          <div class="card">
+            <div class="bar bar-sm"></div>
+            <div class="bar"></div>
+            <div class="bar bar-sm"></div>
+          </div>
+          <div class="card">
+            <div class="bar bar-sm"></div>
+            <div class="bar"></div>
+            <div class="bar bar-sm"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Parcours -->
+      <div class="wf-zone">
+        <span class="wf-tag">05. Les 3 parcours (3 colonnes)</span>
+        <div class="grid-3">
+          <div class="card">
+            <div class="bar bar-sm"></div>
+            <div class="bar"></div>
+            <div class="box">Tags</div>
+          </div>
+          <div class="card">
+            <div class="bar bar-sm"></div>
+            <div class="bar"></div>
+            <div class="box">Tags</div>
+          </div>
+          <div class="card">
+            <div class="bar bar-sm"></div>
+            <div class="bar"></div>
+            <div class="box">Tags</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Débouchés -->
+      <div class="wf-zone">
+        <span class="wf-tag">06. Débouchés (scroll-snap X)</span>
+        <div class="grid-4">
+          <div class="box-cross" style="min-height: 60px;">Métier</div>
+          <div class="box-cross" style="min-height: 60px;">Métier</div>
+          <div class="box-cross" style="min-height: 60px;">Métier</div>
+          <div class="box-cross" style="min-height: 60px;">→</div>
+        </div>
+      </div>
+
+      <!-- 7. Programme -->
+      <div class="wf-zone">
+        <span class="wf-tag">07. Programme (Accordéon &lt;details&gt;)</span>
+        <div class="stack">
+          <div class="acc-row"><div class="bar bar-sm"></div><span>+</span></div>
+          <div class="acc-row"><div class="bar bar-sm"></div><span>+</span></div>
+          <div class="acc-row"><div class="bar bar-sm"></div><span>+</span></div>
+        </div>
+      </div>
+
+      <!-- 8. Contact -->
+      <div class="wf-zone">
+        <span class="wf-tag">08. Contact (2 colonnes)</span>
+        <div class="grid-2">
+          <div class="stack">
+            <div class="bar-lg"></div>
+            <div class="bar"></div>
+            <div class="bar bar-sm"></div>
+          </div>
+          <div class="card">
+            <div class="input"></div>
+            <div class="input"></div>
+            <div class="input" style="height: 46px;"></div>
+            <div class="box">Envoyer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Footer -->
+      <div class="wf-zone">
+        <span class="wf-tag">09. Footer</span>
+        <div class="row-between">
+          <div class="bar" style="width: 180px;"></div>
+          <div class="bar" style="width: 120px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
